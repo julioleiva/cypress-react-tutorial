@@ -4,7 +4,16 @@ import Todo from './Todo';
 let todoCounter = 1;
 
 export default function _App() {
-  const [list, setList] = useState([]);
+  const [list, setList] = useState([
+    {
+      id: 1,
+      value: 'Do nothing',
+    },
+    {
+      id: 2,
+      value: 'Learn Cypress',
+    },
+  ]);
 
   const [item, setItem] = useState('');
 
